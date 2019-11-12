@@ -1,0 +1,32 @@
+/*
+ * Gutenberg Gallery
+ *
+ * Container page
+ * <li class="blocks-gallery-item"> 
+        <figure>
+            <figcaption>
+            ....</figcaption>
+    ...</figure>
+ ... </li>
+ */
+ 
+.wp-block-gallery {
+  .blocks-gallery-image figcaption, .blocks-gallery-item figcaption {
+    padding:5px!important;;
+    color: $color-brand-primary!important;;
+    background:$color-grey-10!important;;
+  }
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots),
+hr:not(.is-style-wide):not(.is-style-dots) {
+  width: 100%;
+  height: 4px;
+background: url('https://2019.europe.wordcamp.org/files/2019/02/wceu2019-short-divider.png') no-repeat 50% 50%!important;
+}
+
+
+.has-talk{
+  font-weight: $bold;
+  color: $color-brand-quaternary;
+}

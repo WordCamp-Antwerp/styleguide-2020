@@ -1,0 +1,36 @@
+/* =Horizontal rule
+===================================================== */
+
+// Horizontal rule
+//
+// Horizontal rule example
+//
+// Markup:
+// <hr>
+//
+// Style guide: 4.hr
+
+hr {
+
+  clear: both;
+  margin: $unit-l 0;
+  padding: 0;
+  border: 0;
+ 
+  background: $image-divider no-repeat 50% 50%;
+
+  @include breakpoint(medium) {
+
+    margin-top: $unit-xl;
+    margin-bottom: $unit-xl;
+
+  }
+
+  @include breakpoint(large) {
+
+    margin-top: $unit-xxl;
+    margin-bottom: $unit-xxl;
+
+  }
+
+}

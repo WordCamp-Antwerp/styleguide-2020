@@ -1,0 +1,39 @@
+{
+  "name": "wcant-styleguide",
+  "version": "1.0.0",
+  "description": "Styleguide for WordCamp Antwerp 2020.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WordCamp-Antwerp/styleguide-2020.git"
+  },
+  "keywords": [
+    "wordcamp",
+    "wcant",
+    "wordcamp",
+    "antwerp",
+    "wordpress"
+  ],
+  "dependencies": {
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "kss": "^2.4.0"
+  },
+  "author": "Koen Van den Wijngaert <koen@koenvandenwijngaert.be>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WordCamp-Antwerp/styleguide-2020/issues"
+  },
+  "homepage": "https://github.com/WordCamp-Antwerp/styleguide-2020#readme"
+}

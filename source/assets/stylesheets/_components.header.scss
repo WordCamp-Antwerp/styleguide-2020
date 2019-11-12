@@ -1,0 +1,146 @@
+/* =Header
+===================================================== */
+
+// Header
+//
+// Header of the site (includes site branding and navigation)
+//
+// Markup: header.html
+//
+// Style guide: 6.header
+
+// Socia Media Icons
+
+.jetpack_widget_social_icons ul.size-small a{
+  width: 18px!important;
+  height:18px!important;
+}
+
+.site-header {
+
+  position: relative;
+
+  background-color: $site-hero-background;
+
+  // background-repeat: repeat-x;
+  // background-position: 50% 0;
+  // background-image: $site-hero-path-small;
+  // background-color: $site-hero-background;
+
+  // @include breakpoint(medium) {
+
+  //   background-size: cover;
+  //   background-image: $site-hero-path-large;
+  //   background-position: 50% 100%;
+
+  // }
+
+  // @media (min-width: 1800px) {
+
+  //   background-image: $site-hero-path-wide;
+
+  // }
+
+  // @include transition-fast();
+
+  // &:before {
+
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+
+  //   background-color: rgba($site-hero-background, $site-hero-overlay);
+
+  //   content: "";
+
+  // }
+
+  > * {
+
+    position: relative;
+    z-index: $z-index-header;
+
+  }
+
+}
+
+.custom-header {
+
+  background: $site-hero-background $site-hero-path-small repeat-x 50% 100%;
+  background-size: cover;
+  background-attachment: scroll;
+
+  // Add gradient
+  &:before {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+
+    background-image: linear-gradient(to top, rgba($site-hero-background, .5), rgba(0,0,0,0));
+
+    content: "";
+
+    // Hide on homepage
+    .home & {
+
+      display: none;
+
+    }
+
+  }
+
+  @include breakpoint(extra-large) {
+
+    background-image: $site-hero-path-large;
+    background-attachment: fixed;
+
+  }
+
+//   background-repeat: no-repeat;
+//   background-position: 50% 0;
+//   background-image: $site-hero-path-wide-temp;
+//   background-color: $site-hero-background;
+
+//   @include breakpoint(medium) {
+
+//     background-size: cover;
+//     background-image: $site-hero-path-wide-temp;
+//     background-position: 50% 100%;
+
+//   }
+
+//   @media (min-width: 1800px) {
+
+//     background-image: $site-hero-path-wide-temp;
+
+//   }
+
+}
+
+// .wp-custom-header {
+
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+
+//   img {
+
+//     max-width: none;
+
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     height: 100%;
+//     min-width: 100vw;
+
+//   }
+
+// }

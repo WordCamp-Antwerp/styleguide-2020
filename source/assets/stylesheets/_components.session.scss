@@ -1,0 +1,47 @@
+/* =Session
+===================================================== */
+
+// Session
+//
+// Session detail
+//
+// Markup: session.html
+//
+// Style guide: 6.session
+
+.wcb_session {
+
+  margin-bottom: $unit-m;
+  padding-bottom: rem(64);
+
+  background: $image-divider no-repeat 50% 100%;
+
+  .entry-title {
+
+    margin-bottom: $unit-xs;
+
+  }
+
+  .session-speakers {
+
+    margin-top: $unit-m;
+
+    font-size: ms(0);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+  }
+
+  #session-speaker-names {
+
+    @include list-reset();
+
+  }
+
+  .session-categories-links {
+
+    @include visually-hidden();
+
+  }
+
+}

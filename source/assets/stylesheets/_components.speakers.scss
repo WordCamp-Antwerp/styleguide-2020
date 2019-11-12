@@ -1,0 +1,191 @@
+/* =Speakers
+===================================================== */
+
+// Speakers
+//
+// Speakers list
+//
+// Markup: speakers.html
+//
+// Style guide: 6.speakers
+
+.wcorg-speakers {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+
+.wcorg-speaker {
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+
+}
+
+.wcorg-speaker {
+
+  padding: 0;
+  margin-bottom: $unit-default;
+
+  border-radius: $border-radius-small;
+
+  @include breakpoint(to-small) {
+
+    width: 48%;
+    margin-left: 4%;
+
+    &:nth-child(2n+1) {
+
+      margin-left: 0;
+
+    }
+
+  }
+
+  @include breakpoint(small) {
+
+    width: 32%;
+    margin-left: 2%;
+
+    &:nth-child(3n+1) {
+
+      margin-left: 0;
+
+    }
+
+  }
+
+  .wcorg-speaker-description {}
+
+  h2 {
+  text-align:center;
+    position: relative;
+    margin: 0;
+    padding: $unit-s;
+    margin-top:rem(8);
+
+    font-size: ms(0);
+    line-height: ms(1);
+
+    a {
+
+      &:hover,
+      &:focus,
+      &:active {
+
+      }
+
+    }
+
+    &:before {
+
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      //background: $image-stripe-horizontal no-repeat right top;
+
+     // min-width: rem(48);
+     // width: 30%;
+      //height: rem(24);
+
+      content: "";
+      @include transition-fast();
+
+    }
+
+    &:hover {
+
+      &:before {
+
+        width: 40%;
+
+      }
+
+    }
+
+  }
+
+  .wcorg-speaker-description h2,
+  .wcorg-speaker-description p {
+
+    @include visually-hidden();
+
+  }
+
+  .avatar {
+
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    border-radius: 50%; 
+    border:4px solid $color-brand-primary;
+  }
+
+
+  p {
+
+    margin-bottom: $unit-xs;
+    font-size: ms(0, 16px);
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  h3 {
+
+    text-transform: none;
+
+  }
+
+  ul {}
+  li {}
+
+}
+
+.post-slug-speakers-open-source-communities h2,
+.post-slug-speakers-business-ii h2,
+.post-slug-speakers-business h2 {
+  color: $color-brand-quinary;
+}
+
+.wp-image-5653.alignleft,
+.alignleft.wp-image-5648,
+.alignleft.wp-image-5649,
+.alignleft.wp-image-5650,
+.wp-image-5652.alignleft,
+.wp-image-5651.alignleft,
+.alignleft.wp-image-5620,
+.alignleft.wp-image-5523,
+.alignleft.wp-image-5524,
+.wp-image-5525.alignleft,
+.alignleft.wp-image-5437,
+.wp-image-5374.alignleft,
+.wp-image-5373.alignleft,
+.alignleft.wp-image-5520,
+.wp-image-5522.alignleft,
+.wp-image-5533.alignleft,
+.alignleft.wp-image-5422,
+.alignleft.wp-image-5424,
+.alignleft.wp-image-5372,
+.alignleft.wp-image-5425,
+.alignleft.wp-image-5426,
+.alignleft.wp-image-5371{
+  border-radius:50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border:4px solid $color-brand-primary;
+  width: 280px;
+  height:280px;
+}
+

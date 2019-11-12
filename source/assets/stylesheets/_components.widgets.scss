@@ -1,0 +1,235 @@
+// Widgets
+//
+// Showing all available widget areas on the page
+//
+// Markup: styleguide-widgets.html
+//
+// Style guide: 6.widget-areas
+
+/*
+ * Style guide widget areas
+ *
+ * Override styling to showcase visually theme layout and widget areas.
+ * This part is scoped to affect only the style guide.
+ */
+
+/* Widget for social media icons in header*/
+
+#header-widgets {
+  position: absolute;
+  top: 0px;
+  z-index: 9000;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color:  $color-grey-10;
+  height:40px;
+    .widget{
+    padding:0;
+  }
+}
+
+.jetpack_widget_social_icons ul li{
+  margin-left:10px!important;
+}
+
+.styleguide-widget-areas {
+
+  * {
+
+    margin: 0!important;
+    padding: 1em!important;
+
+    background: rgba($color-brand-primary, .1);
+    border: rem(2) solid rgba($color-brand-primary, .5);
+
+    font-size: ms(0,18px);
+    line-height: ms(0, 24px);
+
+    &:before {
+
+      position: static!important;
+      top: auto!important;
+      left: auto!important;
+      right: auto!important;
+      bottom: auto!important;
+      display: inline-block;
+      padding: .125em .25em;
+
+      content: "#"attr(id);
+
+      font-size: ms(0,14px);
+      line-height: ms(0, 18px);
+      font-weight: $bold;
+      font-family: $monospace;
+
+      background-color: #fff;
+
+    }
+
+  }
+
+  * + * {
+
+    margin-top: 1em!important;
+
+  }
+
+}
+
+/*
+ * Widget layouts and styling
+ *
+ * Basic widget structure and styling applied based
+ * on the position of the widget.
+ */
+
+
+.widget {
+
+  position: relative;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: ($container-unit-small * 2) 0;
+
+  @include breakpoint(medium) {
+
+    padding: ($container-unit-medium * 2) 0;
+
+  }
+
+}
+
+.widget-title {
+
+  font-size: ms(1);
+  line-height: ms(1);
+
+}
+
+
+/*
+ * Secondary Widgets
+ *
+ * Full width widgets after the content
+ */
+
+#after-header-widgets .widget,
+#before-content-widgets .widget,
+#secondary .widget {
+
+  // padding-left: 0;
+  // padding-right: 0;
+  text-align: center;
+
+  > * {
+
+    position: relative;
+
+  }
+
+  &:before {
+
+    position: absolute;
+    // z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    // background-color: $color-brand-secondary;
+
+    content: "";
+
+  }
+  
+  &.jetpack_subscription_widget {
+    max-width: 50rem;
+    //text-align: left;
+    
+    #subscribe-email,
+    #subscribe-submit {
+      margin-left: 0;
+      margin-right: 0.5rem;
+    }
+    
+  }
+
+}
+
+#content-widgets {
+
+  .widget {
+
+    position: relative;
+
+    &:before {
+
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: -1000px;
+      right: -1000px;
+
+      background-color: inherit;
+
+      content: "";
+
+    }
+
+  }
+
+}
+
+
+/*
+ * Widget text
+ *
+ * Default text widget styles
+ */
+
+.widget_text {
+
+  background-color: $color-grey-10;
+
+  &:before {
+
+    background-color: $color-grey-10!important;
+
+  }
+
+}
+
+
+/*
+ * Primary sidebar widget
+ *
+ * Search styles in primary sidebar
+ */
+
+#primary-sidebar {
+  
+  .search-form {
+  
+    text-align: center;
+  
+  }
+
+  .search-field {
+  
+    display: inline-block;
+    width: 50%;
+
+  }
+
+  .search-submit {
+  left:6px;
+	  display: inline-block;
+  
+  }
+  
+}
