@@ -214,11 +214,11 @@
 
 /* Brand */
 
-$color-brand-primary:             #db0577; // Pink
-$color-brand-secondary:           #bca713; // Okeryellow
-$color-brand-tertiary:            #8e1254; // Dark Purple
-$color-brand-quaternary:          #1598a8; // Turkoois
-$color-brand-quinary:             #1b646c; // Dark turkoois
+$color-brand-primary:             #B9202B; // red
+$color-brand-secondary:           #FBB03B; // yellow
+$color-brand-tertiary:            #000000; // Black
+$color-brand-quaternary:             lighten($color-brand-primary, 10%); // Turkoois
+$color-brand-quinary:             #999999; // Dark turkoois
 
 @include cc($color-brand-primary, 'color-brand-primary');
 @include cc($color-brand-secondary, 'color-brand-secondary');
@@ -231,7 +231,7 @@ $color-brand-quinary:             #1b646c; // Dark turkoois
  * Text
  */
 
-$color-text:                      rgba(0,0,0,.75);
+$color-text:                      rgba(0,0,0,.85);
 $color-text-weak:                 rgba(0,0,0,.6);
 $color-text-strong:               rgba(0,0,0,.9);
 $color-text-invert:               rgba(255,255,255,.75);

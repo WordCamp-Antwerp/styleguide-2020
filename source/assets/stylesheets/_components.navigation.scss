@@ -107,29 +107,9 @@
  */
 
 
-// .menu-main-navigation-container {}
-
 .main-navigation {
-
   position: relative;
-
-  // &:before {
-
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-
-  //   height: rem(2);
-  //   background-color: $color-link;
-
-  //   content: "";
-
-  // }
-
-  // background-color: $color-brand-tertiary;
-  background-color: $color-brand-quinary;
-  //background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.3));
+  background-color: $color-brand-quaternary;
 
   @include breakpoint(to-medium) {
 
@@ -155,29 +135,23 @@
   margin: 0 auto;
 
   @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
 
-    //display: block;
-	display: flex;
-	justify-content: space-between;
-	
-	> li > a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-	}
-	  
+    > li > a {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
   }
 
   @include breakpoint(to-medium) {
-
-    border-top: 1px solid rgba(255,255,255,.2);
-
+    border-top: 1px solid rgba(255, 255, 255, .2);
     display: none;
 
     .toggled-on & {
-
       display: block;
-
     }
 
   }
@@ -185,7 +159,6 @@
 }
 
 .menu-item {
-
   position: relative;
 
   margin: 0;
@@ -203,7 +176,7 @@
     display: inline-block;
 
     @include font-size(18);
-    line-height: em(24,18);
+    line-height: em(24, 18);
     text-align: center;
 
   }
@@ -232,18 +205,18 @@
   @include breakpoint(medium) {
 
     padding: $unit-s $unit-s;
-    
-		font-size: .8em;
-		line-height: 1em;
+
+    font-size: .8em;
+    line-height: 1em;
 
   }
 
   @include breakpoint(large) {
 
     padding: $unit-m $unit-m;
-    
-		font-size: initial;
-		line-height: initial;
+
+    font-size: initial;
+    line-height: initial;
 
   }
 
@@ -324,7 +297,7 @@
       left: 0;
 
     }
-	
+
     &:hover.menu-item:last-of-type > .sub-menu,
     &.focus.menu-item:last-of-type > .sub-menu {
 
@@ -405,18 +378,18 @@
     min-width: rem(260);
 
     background-color: $color-link;
-    border-bottom: 1px solid hsla(0,0%,100%,.4);
-    
+    border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+
     .menu-item {
 
       width: 100%;
       margin: 0;
-      border-top: 1px solid rgba(255,255,255,.2);
+      border-top: 1px solid rgba(255, 255, 255, .2);
 
       text-align: left;
 
     }
-    
+
     li.focus > a,
     li:hover > a {
       background-color: $color-brand-tertiary;

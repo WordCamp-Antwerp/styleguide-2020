@@ -5,9 +5,9 @@
  */
 
 /* Define basic variables and colors */
-$styleguide-color-main: #FF9505;
-$styleguide-color-link: #EC4E20;
-$styleguide-color-link-alt: red;
+$styleguide-color-main: #FBB03B;
+$styleguide-color-link: #B9202B;
+$styleguide-color-link-alt: darken($styleguide-color-link, 0.1);
 $styleguide-color-weak: rgba(0,0,0,.7);
 $styleguide-color-strong: rgba(0,0,0,.9);
 $styleguide-border-radius-small: 3px;
@@ -29,7 +29,7 @@ $styleguide-border-radius-small: 3px;
 
   @include container-padding(1);
 
-  background-color: tint($styleguide-color-main, 90%);
+  background-color: tint($styleguide-color-strong, 90%);
 
   @include breakpoint(medium) {
 

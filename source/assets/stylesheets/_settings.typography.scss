@@ -5,9 +5,9 @@
 //
 // Write about your typography choices for this WordCamp.
 //
-// Bree Serif is used as the font for WordCamp logo and for all headlines.
+// Titillium Web is used as the font for WordCamp logo and for all headlines.
 //
-// Lato is used for body text, buttons, forms etc.
+// System stack is used for body text, buttons, forms etc.
 //
 // Style guide: 1.typography
 
@@ -16,8 +16,8 @@ $ms-base: 1em;
 $ms-ratio: 1.25;
 
 /* Fonts */
-$font-brand-primary:              'Lato', $helvetica;
-$font-brand-secondary:            'Bree Serif', $helvetica;
+$font-brand-primary:              $system;
+$font-brand-secondary:            'Titillium Web', $system;
 
 /* Font use case */
 $font-body:                       $font-brand-primary;
