@@ -217,7 +217,7 @@
 $color-brand-primary:             #B9202B; // red
 $color-brand-secondary:           #FBB03B; // yellow
 $color-brand-tertiary:            #000000; // black
-$color-brand-quaternary:             lighten($color-brand-primary, 15%);
+$color-brand-quaternary:             lighten($color-brand-primary, 10%);
 $color-brand-quinary:             #999999;
 
 @include cc($color-brand-primary, 'color-brand-primary');
