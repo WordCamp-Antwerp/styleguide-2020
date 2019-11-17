@@ -1,15 +1,14 @@
-/*
- * Gutenberg Gallery
- *
- * Container page
- * <li class="blocks-gallery-item"> 
-        <figure>
-            <figcaption>
-            ....</figcaption>
-    ...</figure>
- ... </li>
- */
- 
+/* =Gutenberg
+===================================================== */
+// Gutenberg
+//
+// Style guide: 6.gutenberg
+
+// Jetpack gallery block
+//
+// Markup: gutenberg-gallery.html
+//
+// Style guide: 6.gutenberg.jetpack-gallery
 .wp-block-gallery {
   .blocks-gallery-image figcaption, .blocks-gallery-item figcaption {
     padding:5px!important;;
