@@ -4,6 +4,9 @@
 //
 // Style guide: 6.gutenberg
 
+
+
+
 // Jetpack gallery block
 //
 // Markup: gutenberg-gallery.html
@@ -21,11 +24,42 @@
 hr:not(.is-style-wide):not(.is-style-dots) {
   width: 100%;
   height: 4px;
-background: url('https://2019.europe.wordcamp.org/files/2019/02/wceu2019-short-divider.png') no-repeat 50% 50%!important;
+  background: url('https://2019.europe.wordcamp.org/files/2019/02/wceu2019-short-divider.png') no-repeat 50% 50%!important;
+}
+
+.wp-block-separator.is-style-wide {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-color: $color-brand-secondary;
 }
 
 
 .has-talk{
   font-weight: $bold;
   color: $color-brand-quaternary;
+}
+
+.wp-block-media-text {
+  figure, img {
+    margin-bottom: 0;
+  }
+}
+
+.has-medium-font-size {
+  font-size: ms(1);
+}
+
+.wp-block-cover {
+  margin-bottom: $container-unit-small;
+
+  @include breakpoint(medium) {
+    margin-bottom: $container-unit-medium;
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: $container-unit-large;
+  }
 }

@@ -18,7 +18,7 @@
 
 }
 
-@mixin container-center-padding {
+%content-padding {
   padding: ($container-unit-small * 1.5) $container-unit-small;
 
   @include breakpoint(medium) {
@@ -30,6 +30,12 @@
   @include breakpoint(large) {
 
     padding: ($container-unit-large * 1.5) $container-unit-large;
+
+  }
+
+  @include breakpoint(extra-large) {
+
+    padding: ($container-unit-large * 1.5) 0;
 
   }
 }
@@ -43,8 +49,6 @@
 
 #main {
 
-
-
 }
 
 
@@ -57,24 +61,6 @@
 
 #primary {
 
-  @include container-center();
-
-  text-align: left;
-
-  // padding-bottom: $container-unit-small * 1.5;
-
-  // @include breakpoint(small) {
-
-  //   padding-bottom: $container-unit-medium * 1.5;
-
-  // }
-
-  // @include breakpoint(medium) {
-
-  //   padding-bottom: $container-unit-large * 1.5;
-
-  // }
-
 }
 
 
@@ -86,26 +72,27 @@
  */
 
 #content {
-
-  // @include container-padding(1.5);
-
-  // @include responsive-spacing(1.5);
-
-  padding: ($container-unit-small * 1.5) $container-unit-small;
+  padding: ($container-unit-small * 1.5) 0;
 
   @include breakpoint(medium) {
 
-    padding: ($container-unit-medium * 1.5) $container-unit-medium;
+    padding: ($container-unit-medium * 1.5) 0;
 
   }
 
   @include breakpoint(large) {
 
-    padding: ($container-unit-large * 1.5) $container-unit-large;
+    padding: ($container-unit-large * 1.5) 0;
 
   }
 
+  @include breakpoint(extra-large) {
+
+    padding: ($container-unit-large * 1.5) 0;
+
+  }
 }
+
 
 
 /*
@@ -117,25 +104,33 @@
 
 #secondary {
 
-  @include container-center();
-
-  text-align: left;
-
-  margin-top: $container-unit-small * 1.5;
-
-  @include breakpoint(medium) {
-
-    margin-top: $container-unit-medium * 1.5;
-
-  }
-
-  @include breakpoint(large) {
-
-    margin-top: $container-unit-large * 1.5;
-
-  }
-
 }
+
+.single,
+.page{
+  .entry-content{
+    > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
+      @include container-center();
+
+      padding-left: $container-unit-small;
+      padding-right: $container-unit-small;
+
+      text-align: left;
+    }
+
+    *.alignwide {
+      @include container-center();
+      max-width: $container-max-width-wide;
+
+      padding-left: $container-unit-small;
+      padding-right: $container-unit-small;
+    }
+  }
+  .entry-footer{
+    @include container-center();
+  }
+}
+
 
 
 /*
