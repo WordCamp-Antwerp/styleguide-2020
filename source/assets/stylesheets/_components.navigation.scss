@@ -128,7 +128,7 @@
 .menu {
 
   @include list-reset();
-  @include clearfix();
+  // @include clearfix();
 
   text-align: center;
   max-width: 1200px;

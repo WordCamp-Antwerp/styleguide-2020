@@ -18,6 +18,21 @@
 
 }
 
+@mixin container-center-padding {
+  padding: ($container-unit-small * 1.5) $container-unit-small;
+
+  @include breakpoint(medium) {
+
+    padding: ($container-unit-medium * 1.5) $container-unit-medium;
+
+  }
+
+  @include breakpoint(large) {
+
+    padding: ($container-unit-large * 1.5) $container-unit-large;
+
+  }
+}
 
 /*
  * Main

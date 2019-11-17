@@ -200,6 +200,34 @@
 
 }
 
+
+// Block padding
+//
+// Add block padding accross resolutions with the ability to set multiplicator for left and right padding.
+//
+// Markup:
+// @include block-padding(1.5);
+//
+// Style guide: 2.block-padding
+
+@mixin block-padding($proportion) {
+
+  padding: $container-unit-small ($container-unit-small * $proportion);
+
+  @include breakpoint(small) {
+
+    padding: $container-unit-medium ($container-unit-medium * $proportion);
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: $container-unit-large ($container-unit-large * $proportion);
+
+  }
+
+}
+
 @mixin responsive-spacing($proportion: '1', $type: 'padding', $value: 'negative') {
 
   // Default type is padding, but it can be replaced with:

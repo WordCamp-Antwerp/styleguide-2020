@@ -29,101 +29,65 @@
   overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
   margin-bottom: 0!important; // Add this to override inline styling
 
-  @include container-padding(1);
-
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
-  //.home & {
-  //
-  //  @include container-padding(4.5);
-  //
-  //}
+  body:not(.home) & {
+    padding: $container-unit-small;
 
+    @include breakpoint(medium) {
+      padding: $container-unit-medium $container-unit-medium;
+    }
+  }
+
+  .home & {
+    @include container-padding(4.5);
+  }
 }
 
-.site-title {
+.site-title a {
+  display: block;
+  width: ($site-logo-width * $site-logo-proportion);
+  height: ($site-logo-height * $site-logo-proportion);
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: -99999px;
+  text-align: left;
+  overflow: hidden;
 
-  margin: 0;
-
-  font-size: ms(2);
-  line-height: 1;
-  font-family: $font-headline;
-  text-transform: uppercase;
-  color: $color-brand-primary;
-
-  a {
-    display: block;
-    letter-spacing: .01em;
-  }
-
-  a:before {
-
-    display: block;
-    width: ($site-logo-width * $site-logo-proportion);
-    height: ($site-logo-height * $site-logo-proportion);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: rem(36);
-
-    background-repeat: no-repeat;
-    background-image: $site-logo-path;
-    background-size: 100%;
-
-    content: "";
-
-  }
+  background-repeat: no-repeat;
+  background-image: $site-logo-white-path;
+  background-size: 100%;
 }
 
 .site-description {
   margin: 0;
   margin-top: $unit-xs;
 
-  font-size: ms(0);
   line-height: ms(1);
-  font-family: $font-body;
-  font-weight: $regular;
+  font-family: $font-headline;
+  font-weight: $bold;
+  font-size: ms(1);
   text-transform: none;
+  color: white;
 }
 
-
-
 @include breakpoint(medium) {
-  .custom-header {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
+  body:not(.home) .custom-header {
     .site-branding {
       position: relative;
       text-align: right;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      flex-direction: column;
-      padding-top: 9rem;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .site-title {
-      width: 100%;
-      position: relative;
-
-      a {
-        display: inline-block;
-        max-width: 60%;
-      }
-
-      a:before {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        max-width: 40%;
-        margin-bottom: -2rem;
-      }
+    .site-title a {
     }
 
     .site-description {
-      display: inline-block;
-      max-width: 60%;
     }
   }
 }
