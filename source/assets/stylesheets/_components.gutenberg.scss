@@ -42,6 +42,10 @@ hr:not(.is-style-wide):not(.is-style-dots) {
   color: $color-brand-quaternary;
 }
 
+// Media text block
+//
+//
+// Style guide: 6.gutenberg.block-media-text
 .wp-block-media-text {
   figure, img {
     margin-bottom: 0;
@@ -52,6 +56,12 @@ hr:not(.is-style-wide):not(.is-style-dots) {
   font-size: ms(1);
 }
 
+// Cover block
+//
+// Markup:
+//
+// Style guide: 6.gutenberg.bock-cover
+
 .wp-block-cover {
   margin-bottom: $container-unit-small;
 
@@ -61,5 +71,71 @@ hr:not(.is-style-wide):not(.is-style-dots) {
 
   @include breakpoint(large) {
     margin-bottom: $container-unit-large;
+  }
+}
+
+.wp-block-button {
+  .wp-block-button__link {
+    @extend .button;
+
+    margin-bottom: 5px;
+  }
+
+  &.is-style-fill .wp-block-button__link {
+    //@extend .btn-primary;
+
+    &.has-secondary-background-color {
+      @extend .button--secondary;
+    }
+  }
+
+  &.is-style-outline .wp-block-button__link {
+    background: transparent;
+    color: $color-button-primary !important;
+    border: 1px solid $color-button-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-text-strong-invert!important;
+      background-color: $color-button-primary-hover!important;
+      text-decoration: none;
+      box-shadow: none!important;
+    }
+
+    &.has-luminous-vivid-orange-color {
+      color: $color-button-secondary !important;
+      border-color: $color-button-secondary !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color-button-secondary-hover!important;
+        color: $color-text-strong-invert!important;
+      }
+    }
+  }
+
+  .wp-block-button__link {
+    &.has-vivid-red-background-color {
+      background-color: $color-button-primary;
+      border-color: $color-button-primary;
+    }
+
+    &.has-luminous-vivid-orange-background-color {
+      background-color: $color-button-secondary;
+      border-color: $color-button-secondary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color-button-secondary-hover!important;
+        color: $color-text-strong-invert!important;
+      }
+    }
+
+    &.has-vivid-red-color {
+      color: $color-button-primary !important;
+    }
   }
 }
