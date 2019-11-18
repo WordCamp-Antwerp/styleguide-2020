@@ -107,7 +107,8 @@
 }
 
 .single,
-.page{
+.page,
+.blog {
   .entry-content{
     > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
       @include container-center();
