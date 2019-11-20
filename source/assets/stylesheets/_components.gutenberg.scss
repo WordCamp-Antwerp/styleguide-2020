@@ -139,3 +139,12 @@ hr:not(.is-style-wide):not(.is-style-dots) {
     }
   }
 }
+
+// Button group
+//
+// Markup: <div class="btn-group wp-block-group"><div class="wp-block-group__inner-container"><div class="wp-block-button"><a class="wp-block-button__link" href="https://2020.antwerp.wordcamp.org/sponsors/sponsoring-inquiries/">Apply as a Sponsor</a></div><div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#packages">Show Sponsor Packages</a></div></div></div>
+//
+// Style guide: 6.gutenberg.block-btn-group
+.wp-block-group.btn-group .wp-block-button {
+  display: inline-block;
+}
