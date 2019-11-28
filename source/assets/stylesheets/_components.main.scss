@@ -60,7 +60,12 @@
  */
 
 #primary {
+  .navigation, #comments {
+    @include container-center();
 
+    padding-left: $container-unit-small;
+    padding-right: $container-unit-small;
+  }
 }
 
 
