@@ -24,7 +24,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    transform: translateX(-70%);
+    transform: translateX(-50%);
     height: .125rem;
     background-color: #e8f5f6;
       background:url("https://2019.europe.wordcamp.org/files/2019/02/wceu2019_line.png");
@@ -32,7 +32,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width:800%;
+    width:100%;
+    left: 50%;
 
   }
 
