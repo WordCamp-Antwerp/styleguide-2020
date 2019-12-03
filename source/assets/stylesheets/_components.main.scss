@@ -114,7 +114,7 @@
 .single,
 .page,
 .blog {
-  .entry-content{
+  .entry-content, .page-content{
     > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
       @include container-center();
 
