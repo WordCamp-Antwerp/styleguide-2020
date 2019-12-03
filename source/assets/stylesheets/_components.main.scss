@@ -122,6 +122,10 @@
       padding-right: $container-unit-small;
 
       text-align: left;
+
+      &.ul, &.ol {
+        padding-left: 2rem;
+      }
     }
 
     *.alignwide {
