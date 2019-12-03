@@ -80,14 +80,6 @@
     padding-right: $container-unit-small;
 
   }
-  .entry-title,
-  .entry-meta{
-    @include container-center();
-
-    padding-left: $container-unit-small;
-    padding-right: $container-unit-small;
-
-  }
 }
 
 .page .entry-header,
