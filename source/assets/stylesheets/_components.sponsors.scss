@@ -175,3 +175,101 @@
   display: none!important;
 
 }
+
+// Sponsor widget (in footer)
+.wcb_widget_sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .widget-title { // "proudly sponsored by.."
+    flex-basis: 100%;
+    padding-bottom: $unit-default;
+    font-size: ms(3);
+  }
+
+  .sponsor-level {
+    // Basic styles
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding-bottom: $unit-l;
+
+    .sponsor-level-title {
+      // Sponsor level title.
+      text-align: left;
+      flex-basis: 100%;
+      font-size: ms(0);
+    }
+
+    a.sponsor-logo {
+      // Anchor
+      display: block;
+      padding: 5px;
+      flex-basis: 50%;
+
+      img.wp-post-image {
+        // sponsor image
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: all ease-out 300ms;
+      }
+
+      &:hover, &:focus {
+        img.wp-post-image {
+          filter: grayscale(0);
+          opacity: 1;
+          transition: all ease-out 100ms;
+        }
+      }
+    }
+
+    &.gold {
+      a.sponsor-logo {
+        flex-basis: 100%;
+      }
+    }
+
+    &.silver {
+      a.sponsor-logo {
+        flex-basis: 50%;
+      }
+    }
+
+    &.bronze {
+      a.sponsor-logo {
+        flex-basis: 20%;
+      }
+    }
+
+    &.micro {
+      display: none;
+    }
+
+    @include breakpoint(medium) {
+      &.gold {
+        flex-basis: 60%;
+        padding-right: $unit-default;
+      }
+
+      &.silver {
+        flex-basis: 40%;
+      }
+
+      &.bronze {
+        a.sponsor-logo {
+          flex-basis: 16.66%;
+        }
+      }
+    }
+  }
+}
