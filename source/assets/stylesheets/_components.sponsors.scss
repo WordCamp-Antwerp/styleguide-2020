@@ -6,12 +6,10 @@
   > div {
 
     display: flex;
-
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     text-align: center;
+    align-items: center;
 
   }
 
@@ -23,45 +21,8 @@
     padding-top: $unit-default;
     border-top: 1px solid $color-border-weak;
 
-    font-size: ms(0);
-    line-height: ms(2);
-    text-align: center;
-
-    position: relative;
-    z-index: 100;
-
-    @include breakpoint(extra-large) {
-
-      padding-top: 0;
-      border-top: none;
-
-      &:before {
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translateX(-50%);
-        background: url('https://2019.europe.wordcamp.org/files/2019/02/wceu2019-left-line.png');
-        height: 5px;
-        width: 488px;
-        content: "";
-        z-index: -1;
-
-      }
-
-      &:after {
-        position: absolute;
-        top: 50%;
-        right: -25%;
-        transform: translateX(-50%);
-        background: url('https://2019.europe.wordcamp.org/files/2019/02/wceu2019-right-line.png');
-        height: 5px;
-        width: 488px;
-        content: "";
-        z-index: -1;
-      }
-
-
-    }
+    font-size: ms(2);
+    text-align: left;
 
   }
 
@@ -124,10 +85,7 @@
 }
 
 // Large
-.wcorg-sponsor-level-administrator,
-.wcorg-sponsor-level-event-after-party,
-.wcorg-sponsor-level-event-speakers-dinner,
-.wcorg-sponsor-level-super-admin {
+.wcorg-sponsor-level-gold {
 
   @include clearfix();
 
@@ -152,10 +110,7 @@
 }
 
 // Medium
-.wcorg-sponsor-level-speakers-dinner,
-.wcorg-sponsor-level-author,
-.wcorg-sponsor-level-editor,
-.wcorg-sponsor-level-media-partners {
+.wcorg-sponsor-level-silver {
 
   @include clearfix();
 
@@ -174,8 +129,7 @@
 }
 
 // Small
-.wcorg-sponsor-level-subscriber,
-.wcorg-sponsor-level-small-business {
+.wcorg-sponsor-level-bronze {
 
   @include clearfix();
 
@@ -194,7 +148,7 @@
 }
 
 // Tiny
-.wcorg-sponsor-level-microsponsor {
+.wcorg-sponsor-level-micro {
 
   @include clearfix();
 
