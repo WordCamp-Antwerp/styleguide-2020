@@ -235,13 +235,13 @@
 
     &.gold {
       a.sponsor-logo {
-        flex-basis: 100%;
+        flex-basis: 33%;
       }
     }
 
     &.silver {
       a.sponsor-logo {
-        flex-basis: 50%;
+        flex-basis: 25%;
       }
     }
 
@@ -257,12 +257,12 @@
 
     @include breakpoint(medium) {
       &.gold {
-        flex-basis: 60%;
-        padding-right: $unit-default;
+        //flex-basis: 60%;
+        //padding-right: $unit-default;
       }
 
       &.silver {
-        flex-basis: 40%;
+        //flex-basis: 40%;
       }
 
       &.bronze {
