@@ -93,11 +93,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  padding: ($container-unit-small * 2) 0;
+  padding: $container-unit-small 0;
 
   @include breakpoint(medium) {
 
-    padding: ($container-unit-medium * 2) 0;
+    padding: $container-unit-medium 0;
 
   }
 
@@ -145,17 +145,17 @@
     content: "";
 
   }
-  
+
   &.jetpack_subscription_widget {
     max-width: 50rem;
     //text-align: left;
-    
+
     #subscribe-email,
     #subscribe-submit {
       margin-left: 0;
       margin-right: 0.5rem;
     }
-    
+
   }
 
 }
@@ -212,15 +212,15 @@
  */
 
 #primary-sidebar {
-  
+
   .search-form {
-  
+
     text-align: center;
-  
+
   }
 
   .search-field {
-  
+
     display: inline-block;
     width: 50%;
 
@@ -229,7 +229,7 @@
   .search-submit {
   left:6px;
 	  display: inline-block;
-  
+
   }
-  
+
 }
