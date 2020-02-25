@@ -77,7 +77,10 @@
 
   #speaker-session-names {
 
-    @include list-reset();
+    //@include list-reset();
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
 
   }
 
