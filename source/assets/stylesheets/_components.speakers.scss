@@ -59,14 +59,15 @@
 
   }
 
-  .wcorg-speaker-description {}
+  .wcorg-speaker-description {
+  }
 
   h2 {
-  text-align:center;
+    text-align: center;
     position: relative;
     margin: 0;
     padding: $unit-s;
-    margin-top:rem(8);
+    margin-top: rem(8);
 
     font-size: ms(0);
     line-height: ms(1);
@@ -88,8 +89,8 @@
       left: 0;
       //background: $image-stripe-horizontal no-repeat right top;
 
-     // min-width: rem(48);
-     // width: 30%;
+      // min-width: rem(48);
+      // width: 30%;
       //height: rem(24);
 
       content: "";
@@ -125,7 +126,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border:4px solid $color-brand-primary;
+    border: 4px solid $color-brand-primary;
   }
 
 
@@ -148,8 +149,11 @@
 
   }
 
-  ul {}
-  li {}
+  ul {
+  }
+
+  li {
+  }
 
 }
 
@@ -180,29 +184,34 @@
 .alignleft.wp-image-5372,
 .alignleft.wp-image-5425,
 .alignleft.wp-image-5426,
-.alignleft.wp-image-5371{
-  border-radius:50%;
+.alignleft.wp-image-5371 {
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border:4px solid $color-brand-primary;
+  border: 4px solid $color-brand-primary;
   width: 280px;
-  height:280px;
+  height: 280px;
 }
 
 /** Speaker blocks **/
 .wordcamp-speakers {
-    &__post {
-      // Container div
-      @extend .outline;
-      @include clearfix();
-    }
+  .wordcamp-post-list__post {
+    margin-bottom: 0;
+  }
 
-    &__title {
-      // Speaker name
-      a {
-        box-shadow: none;
-      }
+  &__post {
+    // Container div
+    @extend .outline;
+    margin-bottom: 0;
+    @include clearfix();
+  }
+
+  &__title {
+    // Speaker name
+    a {
+      box-shadow: none !important;
     }
+  }
 
   .wordcamp-image__avatar-container {
     img {
